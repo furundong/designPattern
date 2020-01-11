@@ -21,6 +21,4 @@ public class GamePlayer implements IGamePlayer {
             System.out.println(this.name + " 又升了一级！");
     }
 
-    public static void main(String[] args) {
-    }
 }

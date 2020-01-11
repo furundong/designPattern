@@ -8,7 +8,6 @@ import java.lang.reflect.Proxy;
     动态代理是在实现阶段不用关心代理谁，而在运行阶段才指定代理哪一个对象。相对来说，自己写代理类的方式就是静态代理。
     现在有一个非常流行的名称叫做面向横切面编程，也就是AOP（Aspect Oriented Programming），其核心就是采用了动态代理机制，
 
-
     在类图中增加了一个InvocationHandler接口和GamePlayIH类，作用就是产生一个对象的
     代理对象，其中InvocationHandler是JDK提供的动态代理接口，对被代理类的方法进行代理。
     我们来看程序，接口保持不变，实现类也没有变化，
@@ -55,4 +54,7 @@ public class Client {
 
 /*
 这个时候就要说了。登录我需要日志。实现一下吧。  有了代理就会发现是真的轻松。
+
+代理功能不仅如此：看看example4，更加解耦
+
  */

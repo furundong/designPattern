@@ -1,0 +1,45 @@
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡  ©°BufferedInputStream
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡  ©ÀDataInputStream
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©°FilterInputStream©àLineNumberInputStream
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ÀFileInputStream¡¡©¸PushbackInputStream
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ÀByteArrayInputStream
+¡¡¡¡¡¡¡¡¡¡©°InputStream©¤©¤©àPipedInputStream
+¡¡¡¡¡¡¡¡¡¡©¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ÀSequenceInputStream
+¡¡¡¡¡¡¡¡¡¡©¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ÀStringBufferInputStream
+¡¡¡¡¡¡¡¡¡¡©¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¸ObjectInputStream  //Õâ¸öÀà, ÆäÊµÒ²ÓÃÁË×°ÊÎÀà, µ«²»ÊÇÕæÕýµÄ×°ÊÎÀà.
+        ©¦
+        ©¦                               ¡¡ ©°BufferedOutputStream
+¡¡¡¡¡¡¡¡¡¡©¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ ©°FilterOutputStream©àDataOutputStream
+¡¡¡¡Object©È¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ÀFileOutputStream¡¡©¸PrintStream
+¡¡¡¡¡¡¡¡¡¡©ÀOutputStream©¤©¤©àByteArrayOutputStream
+¡¡¡¡¡¡¡¡¡¡©ÀFile¡¡¡¡¡¡¡¡¡¡¡¡©ÀPipedOutputStream
+        ©¦              ©¸ObjectOutputStream
+        ©¦
+¡¡¡¡¡¡¡¡¡¡©ÀFileDescriptor¡¡
+¡¡¡¡¡¡¡¡¡¡©ÀObjectStreamClass
+¡¡¡¡¡¡¡¡¡¡©ÀRandomAccessFile
+¡¡¡¡¡¡¡¡¡¡©¸StreamTokenizer
+
+
+
+ÏÂÃæÁÐ³öÁ½ÖÖÁ÷ÀàµÄ¶ÔÓ¦¹ØÏµ(Í¼7.2)¡£ÆäÖÐ£¬×ó±ßÒ»À¸ÊÇ°´¼Ì³Ð¹ØÏµÅÅÁÐµÄ×Ö·ûÁ÷Àà£¬ÓÒ±ßÊÇ¶ÔÓ¦µÄ×Ö½ÚÁ÷Àà¡£
+    ¡¡¡¡Reader¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ InputStream
+    ¡¡¡¡¡¡©ÀBufferedReader¡¡¡¡¡¡¡¡¡¡ BufferedInputStream
+    ¡¡¡¡¡¡©¦¡¡¡¡©¸LineNumberReader¡¡ LineNumberReader
+    ¡¡¡¡¡¡©ÀCharArrayReader¡¡¡¡¡¡¡¡¡¡ByteArrayInputStream
+    ¡¡¡¡¡¡©ÀInputStreamReader¡¡¡¡¡¡¡¡ (none)
+    ¡¡¡¡¡¡©¦¡¡¡¡©¸FileReader¡¡¡¡¡¡¡¡¡¡FileInputStream
+    ¡¡¡¡¡¡©ÀFilterReader¡¡¡¡¡¡¡¡¡¡¡¡¡¡FilterInputStream
+    ¡¡¡¡¡¡©¦¡¡¡¡©¸PushbackReader¡¡¡¡¡¡PushbackInputStream
+    ¡¡¡¡¡¡©ÀPipedReader¡¡¡¡¡¡¡¡¡¡¡¡¡¡ PipedInputStream
+    ¡¡¡¡¡¡©¸StringReader¡¡¡¡¡¡¡¡¡¡¡¡¡¡StringBufferInputStream
+
+    ¡¡¡¡Write¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡OutputStream
+    ¡¡¡¡©ÀBufferedWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡BufferedOutputStream
+    ¡¡¡¡©ÀCharArrayWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡ByteArrayOutputStream
+    ¡¡¡¡©ÀOutputStreamWriter¡¡¡¡¡¡¡¡¡¡(none)
+    ¡¡¡¡©¦¡¡¡¡©¸FileWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡FileOutputStream
+    ¡¡¡¡©ÀFilterWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡FilterOutputStream
+    ¡¡¡¡©ÀPrintWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡PrintStream
+    ¡¡¡¡©ÀPipedWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡PipedOutputStream
+    ¡¡¡¡©¸StringWriter¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ (none)

@@ -57,7 +57,9 @@ public class Factory {
     类加载方式：
        1. new Food() 直接第一次就加载
        2. 通过Class.forName()来加载类，然后调用类的newInstance()方法实例化对象。
-            Class.forName(className,true,this.getClass.getClassLoader)，第二个参数表示加载完后是否立即初始化，第三个参数即前文提到的表示是当前类加载器。
+            Class.forName(className,true,this.getClass.getClassLoader)，
+            第二个参数表示加载完后是否立即初始化，
+            第三个参数即前文提到的表示是当前类加载器。
        3. classLoader.loadClass()实际调用的是classLoader.loadClass(className,false)，第二个参数表示加载完成后是否连接，即用此方法加载类，加载完成后不会去初始化，
         用Class.forName()加载类加载完成后可以被初始化。你如果用实例化jdbc的Driver这种方式，就会报null异常
 

@@ -1,15 +1,16 @@
 package cn.designPattern.dp.creator._5_Prototype.example4;
 
 public class Client {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) {
 //产生一个对象
         Thing thing = new Thing();
 //设置一个值
-        thing.setValue("张三");
+        thing.setValue("zhangsan");
 //拷贝一个对象
         Thing cloneThing = (Thing) thing.clone();
-        cloneThing.setValue("李四");
+        cloneThing.setValue("lisi");
         System.out.println(thing.getArrayList());
+        System.out.println(cloneThing.getArrayList());
     }
 }
 

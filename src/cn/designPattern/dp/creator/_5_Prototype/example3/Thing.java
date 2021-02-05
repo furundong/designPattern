@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Thing implements Cloneable {
     //定义一个私有变量
-    private ArrayList<String> arrayList = new ArrayList<String>();
+    private ArrayList<String> arrayList = new ArrayList<>();
 
     @Override
     protected Thing clone() throws CloneNotSupportedException {

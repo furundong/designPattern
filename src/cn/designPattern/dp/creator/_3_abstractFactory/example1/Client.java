@@ -2,6 +2,8 @@ package cn.designPattern.dp.creator._3_abstractFactory.example1;
 
 /**
  *  针对工厂方法的缺点，产品等级过多（食物，甜品，饮料），导致类的爆棚。
+ *
+ *  所以我们这个时候就应该使用抽象工厂
  */
 public class Client {
     public static void main(String[] args) {
@@ -40,7 +42,7 @@ class ChihuoFactory implements Factory{
         解释:抽象工厂中,可以生产多个产品,这多个产品之间,必须有内在联系。
 
     缺点：
-        1.当,产品等级发生变化时(增加产品等价、删除产品等价),都要引起所有以前工厂代码的修改这就违反了开闭原则”
+        1.当,产品等级发生变化时(增加产品等级、删除产品等级),都要引起所有以前工厂代码的修改这就违反了开闭原则”
 
     有人会问了，这都是最后一个工厂了，怎么还有缺点呢。
         解释：每个设计模式都有缺点，跟优点，并不是说，一个设计模式无敌！

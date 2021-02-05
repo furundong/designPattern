@@ -2,20 +2,20 @@ package cn.designPattern.dp.creator._2_FactoryMethod.example2;
 
 public class Client {
     public static void main(String[] args) {
-//å£°æ˜é˜´é˜³å…«å¦ç‚‰
+//ÉùÃ÷ÒõÑô°ËØÔÂ¯
         AbstractHumanFactory YinYangLu = new HumanFactory();
-//å¥³å¨²ç¬¬ä¸€æ¬¡é€ äººï¼Œç«å€™ä¸è¶³ï¼Œäºæ˜¯ç™½äººäº§ç”Ÿäº†
-        System.out.println("--é€ å‡ºçš„ç¬¬ä¸€æ‰¹äººæ˜¯ç™½è‰²äººç§--");
+//Å®æ´µÚÒ»´ÎÔìÈË£¬»ğºò²»×ã£¬ÓÚÊÇ°×ÈË²úÉúÁË
+        System.out.println("--Ôì³öµÄµÚÒ»ÅúÈËÊÇ°×É«ÈËÖÖ--");
         Human whiteHuman = YinYangLu.createHuman(WhiteHuman.class);
         whiteHuman.getColor();
         whiteHuman.talk();
-//å¥³å¨²ç¬¬äºŒæ¬¡é€ äººï¼Œç«å€™è¿‡è¶³ï¼Œäºæ˜¯é»‘äººäº§ç”Ÿäº†
-        System.out.println("\n--é€ å‡ºçš„ç¬¬äºŒæ‰¹äººæ˜¯é»‘è‰²äººç§--");
+//Å®æ´µÚ¶ş´ÎÔìÈË£¬»ğºò¹ı×ã£¬ÓÚÊÇºÚÈË²úÉúÁË
+        System.out.println("\n--Ôì³öµÄµÚ¶şÅúÈËÊÇºÚÉ«ÈËÖÖ--");
         Human blackHuman = YinYangLu.createHuman(BlackHuman.class);
         blackHuman.getColor();
         blackHuman.talk();
-//ç¬¬ä¸‰æ¬¡é€ äººï¼Œç«å€™åˆšåˆšå¥½ï¼Œäºæ˜¯é»„è‰²äººç§äº§ç”Ÿäº†
-        System.out.println("\n--é€ å‡ºçš„ç¬¬ä¸‰æ‰¹äººæ˜¯é»„è‰²äººç§--");
+//µÚÈı´ÎÔìÈË£¬»ğºò¸Õ¸ÕºÃ£¬ÓÚÊÇ»ÆÉ«ÈËÖÖ²úÉúÁË
+        System.out.println("\n--Ôì³öµÄµÚÈıÅúÈËÊÇ»ÆÉ«ÈËÖÖ--");
         Human yellowHuman = YinYangLu.createHuman(YellowHuman.class);
         yellowHuman.getColor();
         yellowHuman.talk();
@@ -23,5 +23,6 @@ public class Client {
 }
 /*
 
-è¿™æ˜¯ä¸€ç§æ¯”è¾ƒç»å…¸çš„ç”¨æ³•ï¼Œ å·¥å‚æ–¹æ³•æ¨¡å¼æœ‰å¾ˆå¤šæ‰©å±•ï¼Œè€Œä¸”ä¸å…¶ä»–æ¨¡å¼ç»“åˆä½¿ç”¨å¨åŠ›æ›´å¤§ï¼Œå¦‚ä¸‹ã€‚
+ÕâÊÇÒ»ÖÖ±È½Ï¾­µäµÄÓÃ·¨£¬ ¹¤³§·½·¨Ä£Ê½ÓĞºÜ¶àÀ©Õ¹£¬¶øÇÒÓëÆäËûÄ£Ê½½áºÏÊ¹ÓÃÍşÁ¦¸ü´ó£¬ÈçÏÂ¡£
+ÕâÃ´×öºÃÏñÒÑ¾­½â¾öÁË°ì·¨, µ«ÆäÊµÒÑ¾­ÊÇ¸ö³éÏó¹¤³§ÁË, ËûÃÇµÄÑ¡Ôñ¾ÍÔÚÓÚ²úÆ·µÈ¼¶¸ú²úÆ·´ØµÄ±ä»¯.
  */

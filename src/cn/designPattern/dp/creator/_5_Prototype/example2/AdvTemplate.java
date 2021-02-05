@@ -1,16 +1,16 @@
 package cn.designPattern.dp.creator._5_Prototype.example2;
 
-//å¹¿å‘Šä¿¡æ¨¡æ¿ä»£ç 
+//¹ã¸æĞÅÄ£°å´úÂë
 public class AdvTemplate {
-    //å¹¿å‘Šä¿¡åç§°
-    private String advSubject ="XXé“¶è¡Œå›½åº†ä¿¡ç”¨å¡æŠ½å¥–æ´»åŠ¨";
-    //å¹¿å‘Šä¿¡å†…å®¹
-    private String advContext = "å›½åº†æŠ½å¥–æ´»åŠ¨é€šçŸ¥ï¼šåªè¦åˆ·å¡å°±é€ä½ ä¸€ç™¾ä¸‡ï¼...";
-    //å–å¾—å¹¿å‘Šä¿¡çš„åç§°
+    //¹ã¸æĞÅÃû³Æ
+    private String advSubject ="XXÒøĞĞ¹úÇìĞÅÓÃ¿¨³é½±»î¶¯";
+    //¹ã¸æĞÅÄÚÈİ
+    private String advContext = "¹úÇì³é½±»î¶¯Í¨Öª£ºÖ»ÒªË¢¿¨¾ÍËÍÄãÒ»°ÙÍò£¡...";
+    //È¡µÃ¹ã¸æĞÅµÄÃû³Æ
     public String getAdvSubject(){
         return this.advSubject;
     }
-    //å–å¾—å¹¿å‘Šä¿¡çš„å†…å®¹
+    //È¡µÃ¹ã¸æĞÅµÄÄÚÈİ
     public String getAdvContext(){
         return this.advContext;
     }

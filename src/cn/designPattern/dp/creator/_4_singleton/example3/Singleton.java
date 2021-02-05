@@ -27,7 +27,7 @@ public class Singleton{
 为什么要用volatile
 instance = new Singleton2()可以分解为三部分
 1 memory=allocate();// 分配内存
-2 ctorInstanc(memory) //初始化对象
+2 ctorInstance(memory) //初始化对象
 3 instance=memory //设置instance指向刚分配的地址
 
 JVM出于优化需要可能进行指令重排就会出现1->3->2的情况，多线程的情况下instance还没有初始化之前其他线程就会在外部检查到instance不为null，而返回还没有初始化的instance，就会有问题

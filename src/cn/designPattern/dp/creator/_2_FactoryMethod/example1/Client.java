@@ -46,7 +46,7 @@ class BeefFactory implements FoodFactory{
             也就是说,虽然客户端依赖于工厂的具体类名,可是在工T业内所有工厂的名字都是趋向于稳定(并不是100%不会変)。至少工厂类的名字,要比具体产品类的名字更加稳定
 
        2.既然产品是我们自己客户端扩展出来的,那为什么不直接自己实例化呢?毕竟这个扩展出来的这个产品,我们自己就是作者。我们想怎么改类名自己都能把控!为什么还要为自己制作的产品做工厂呢?
-            就是这个牛肉不需要写工厂了，我Food food = new Beeef();这样不是很完美嘛！
+            就是这个牛肉不需要写工厂了，我Food food = new Beef();这样不是很完美嘛！
          解释:因为,作者在开发功能时,不仅仅只会开发一些抽象产品、具体产品、对应的工厂,还会配套地搭配一些提前好的框架。框架用的就是工厂，你这里说不用牛肉工厂，以后怎么使用作者的其他功能
 
       3. 现在制作出 BeefFactory,是为了能把 BeefFactory 传给作者的功能,所以,必须定义这个 BeefFactory。那为什么不从一开始就让作者的方法方法就直接接受Food参数呢?而不是现在的FoodFactory作为参数。
@@ -75,7 +75,7 @@ class BeefFactory implements FoodFactory{
             if(type.equals("Product1")){
                 product = new Hamburger();
             }else{
-                product = new Hamburger();
+                product = new Noodle();
             }
 //同时把对象放到缓存容器中
             prMap.put(type,product);

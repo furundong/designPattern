@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_1_simpleFactory/example2/Factory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_1_simpleFactory/example3/Factory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example1/HamburgerFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example2/BlackHuman.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example2/Human.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example2/HumanFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example2/WhiteHuman.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example2/YellowHuman.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example4/Client.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_2_FactoryMethod/example4/FoodFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_6_Bulider/demo1/Builder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_6_Bulider/demo1/Client.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_6_Bulider/demo1/ConcreteProduct.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_6_Bulider/demo1/Director.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/_6_Bulider/demo1/Product.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/designPattern/dp/creator/readme.txt" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

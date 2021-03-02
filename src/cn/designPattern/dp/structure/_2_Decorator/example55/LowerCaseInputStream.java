@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 public class LowerCaseInputStream extends FilterInputStream {
 
-    //InputStream in    //这里我可以关联, 也可以不关联, 因为我不需要用到这个in
+    //InputStream in    //这里我可以关联, 也可以不关联, 因为父类已经有了这个in
     protected LowerCaseInputStream(InputStream in) {
         super(in);
     }

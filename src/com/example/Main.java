@@ -47,7 +47,6 @@ public class Main {
         URL url = new URL(urlString);
         // 打开连接
         URLConnection con = url.openConnection();
-        System.out.println(con);
         if(((HttpsURLConnectionImpl) con).getResponseCode() != 404){
             // 输入流
             //((HttpsURLConnectionImpl) con).getResponseMessage()

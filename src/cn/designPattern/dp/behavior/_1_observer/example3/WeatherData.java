@@ -21,6 +21,7 @@ public class WeatherData extends Observable {
 
     public void setHumidity(String humidity) {
         this.humidity = humidity;
+        this.setChanged();
         this.notifyObservers(humidity);
     }
 

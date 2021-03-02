@@ -1,7 +1,5 @@
 package cn.designPattern.dp.behavior._1_observer.example2;
 
-import javax.lang.model.SourceVersion;
-
 public class CurrentConditionsDisplay implements Observer,DisplayElement {
     private String temperature;
     private String humidity;

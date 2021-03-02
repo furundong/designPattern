@@ -1,7 +1,5 @@
 package cn.designPattern.dp.behavior._1_observer.example2;
 
-import javafx.collections.ObservableSet;
-
 import java.util.ArrayList;
 
 public class WeatherData implements Subject {

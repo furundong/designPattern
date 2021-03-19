@@ -20,7 +20,7 @@ public class Client {
 
 
 //=================开始扩展, 我开始戒游戏了, 不想要高端电脑,低端的就行=================
-class LowComputerBuilder implements ComputerBuilder{
+class LowComputerBuilder implements ComputerBuilder {
 
     private Computer computer = new Computer(); //这里就是跟工厂方法最不一样的地方, 下面开始建造对象
 

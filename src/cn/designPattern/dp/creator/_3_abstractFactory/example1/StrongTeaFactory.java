@@ -1,9 +1,9 @@
 package cn.designPattern.dp.creator._3_abstractFactory.example1;
 
-public class StrongTeaFactory implements Factory{
+public class StrongTeaFactory implements Factory {
     @Override
     public Drink getDrink() {
-        return  new Coffee();
+        return new Coffee();
     }
 
     @Override

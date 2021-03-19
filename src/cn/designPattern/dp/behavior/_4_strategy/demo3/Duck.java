@@ -12,11 +12,11 @@ public abstract class Duck {
         this.quackBehavior = quackBehavior;
     }
 
-    public void fly(){
+    public void fly() {
         flyBehavior.fly();
     }
 
-    public void quack(){
+    public void quack() {
         quackBehavior.quack();
     }
 

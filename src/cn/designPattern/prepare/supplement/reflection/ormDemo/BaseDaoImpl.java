@@ -144,7 +144,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
             }
         }
         String sql1 = sqlsb.substring(0, sqlsb.length() - 5);
-        sql1 += " where "+condition;
+        sql1 += " where " + condition;
         return sql1;
     }
 

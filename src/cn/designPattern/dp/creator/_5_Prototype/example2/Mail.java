@@ -1,11 +1,6 @@
 package cn.designPattern.dp.creator._5_Prototype.example2;
 
-public class Mail implements Cloneable{ //接口只是一个标记作用
-    //构造函数
-    public Mail(AdvTemplate advTemplate){
-        this.contxt = advTemplate.getAdvContext();
-        this.subject = advTemplate.getAdvSubject();
-    }
+public class Mail implements Cloneable { //接口只是一个标记作用
     //收件人
     private String receiver;
     //称谓
@@ -16,12 +11,17 @@ public class Mail implements Cloneable{ //接口只是一个标记作用
     private String contxt;
     //邮件的尾部，一般都是加上"XXX版权所有"等信息
     private String tail;
+    //构造函数
+    public Mail(AdvTemplate advTemplate) {
+        this.contxt = advTemplate.getAdvContext();
+        this.subject = advTemplate.getAdvSubject();
+    }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        Mail mail =null;
+        Mail mail = null;
         try {
-            mail = (Mail)super.clone();
+            mail = (Mail) super.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

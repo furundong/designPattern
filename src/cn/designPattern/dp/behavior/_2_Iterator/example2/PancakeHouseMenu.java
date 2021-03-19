@@ -3,6 +3,7 @@ package cn.designPattern.dp.behavior._2_Iterator.example2;
 import cn.designPattern.dp.behavior._2_Iterator.bean.MenuItem;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * create by Freedom on 2020/7/2
@@ -36,6 +37,14 @@ public class PancakeHouseMenu {
         return new Ite();
     }
 
+    @Override
+    public String toString() {
+        return "PancakeHouseMenu{" +
+                "menuList=" + menuList +
+                ", size=" + size +
+                '}';
+    }
+
     public class Ite implements Iterator<MenuItem> {
 
         @Override
@@ -47,13 +56,5 @@ public class PancakeHouseMenu {
         public MenuItem next() {
             return menuList.get(--size);
         }
-    }
-
-    @Override
-    public String toString() {
-        return "PancakeHouseMenu{" +
-                "menuList=" + menuList +
-                ", size=" + size +
-                '}';
     }
 }

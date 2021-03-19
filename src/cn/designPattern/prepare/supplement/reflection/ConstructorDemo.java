@@ -4,13 +4,11 @@ import java.lang.reflect.Constructor;
 
 /**
  * create by Freedom on 2021/2/1
- *
+ * <p>
  * getConstructor(Class...)：获取某个public的Constructor；
  * getDeclaredConstructor(Class...)：获取某个Constructor；
  * getConstructors()：获取所有public的Constructor；
  * getDeclaredConstructors()：获取所有Constructor。
- *
- *
  */
 public class ConstructorDemo {
     public static void main(String[] args) throws Exception {

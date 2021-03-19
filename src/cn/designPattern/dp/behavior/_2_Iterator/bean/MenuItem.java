@@ -2,13 +2,13 @@ package cn.designPattern.dp.behavior._2_Iterator.bean;
 
 /**
  * create by Freedom on 2020/7/2
- *
+ * <p>
  * 此时我们有一个菜单列表， 那么旗下有许多的餐饮店，此时就需要一个菜单类。
  * 比我们有早餐店，
  * 午餐店
  */
 public class MenuItem {
-   private String name;
+    private String name;
     private String description;
     private Boolean vegetarian;
     private Double price;

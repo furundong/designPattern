@@ -2,7 +2,7 @@ package cn.designPattern.dp.behavior._4_strategy.demo1;
 
 /**
  * create by Freedom on 2021/2/9
- *
+ * <p>
  * 本例子出自 Header First里面的策略模式, 讲得非常的好
  */
 public class Client {

@@ -4,6 +4,7 @@ package cn.designPattern.dp.behavior._2_Iterator.example2;
 import cn.designPattern.dp.behavior._2_Iterator.bean.MenuItem;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  * create by Freedom on 2020/7/2
@@ -11,8 +12,8 @@ import java.util.Arrays;
 public class DinerMenu {
     static final int MAX_ITEMS = 6;
     int numberOfItem = 0;
-    private int size;
     MenuItem[] menuList = new MenuItem[MAX_ITEMS];
+    private int size;
 
     public DinerMenu() {
 
@@ -40,6 +41,15 @@ public class DinerMenu {
         return new Ite();
     }
 
+    @Override
+    public String toString() {
+        return "DinerMenu{" +
+                "numberOfItem=" + numberOfItem +
+                ", size=" + size +
+                ", menuList=" + Arrays.toString(menuList) +
+                '}';
+    }
+
     public class Ite implements Iterator<MenuItem> {
 
         @Override
@@ -51,14 +61,5 @@ public class DinerMenu {
         public MenuItem next() {
             return menuList[--size];
         }
-    }
-
-    @Override
-    public String toString() {
-        return "DinerMenu{" +
-                "numberOfItem=" + numberOfItem +
-                ", size=" + size +
-                ", menuList=" + Arrays.toString(menuList) +
-                '}';
     }
 }

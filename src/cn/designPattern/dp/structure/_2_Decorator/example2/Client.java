@@ -2,11 +2,10 @@ package cn.designPattern.dp.structure._2_Decorator.example2;
 
 /**
  * create by Freedom on 2021/2/4
- *
+ * <p>
  * 针对example2里面的问题, Header First里面给出的办法是在beverage里面加调料的判断, 这个好像可以解决类爆炸的问题, 如下
- *
+ * <p>
  * 我们在 Beverage中加入调料的boolean, 需要就加钱
- *
  */
 public class Client {
     public static void main(String[] args) {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <filter>
+        <display-name>FilterDispatcher</display-name>
+        <filter-name>FilterDispatcher</filter-name>
+        <filter-class>cn.designPattern.dp.summary.mvcDemo.FilterDispatcher</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDispatcher</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+</web-app>
+
+        <!-- 在这里定义了对所有以.do结尾的请求进行拦截，拦截后由FilterDispatcher的doFilter方法处理。
+        过滤器是在启动时自动初始化，初始化完毕后立刻调用inti方法，在init方法中我们做了两件事情。
+                 * 1、检查XML配置文件是否正确
+                 * 2、启动监控程序，观察配置文件是否正确
+
+        ● 检查XML配置文件
+            所有的Action与视图的对应关系是在配置文件中配置的，因此若配置文件出错，该应用
+            应该停止响应，这就需要在启动时对XML文件进行完整性检查和语法分析。
+        ● 启动监视器
+            配置文件随时都可以修改，但是它修改后不应该需要重新启动应用才能生效，否则对系
+            统的正常运行有非常大的影响，因此这里要使用到Listener（监听）行为了。
+        -->

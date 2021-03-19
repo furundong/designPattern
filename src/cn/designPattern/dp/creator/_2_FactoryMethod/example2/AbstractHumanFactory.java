@@ -9,7 +9,7 @@ package cn.designPattern.dp.creator._2_FactoryMethod.example2;
  * 其中的"T"表示的是，只要实现了Human接口的类都可以作为参数，泛型是JDK 1.5中的
  * 一个非常重要的新特性，它减少了对象间的转换，约束其输入参数类型，对Collection集合下
  * 的实现类都可以定义泛型。有关泛型的详细知识，请参考相关的Java语法文档。
- *
+ * <p>
  * 注意：设计模式种抽象类跟接口是一样的概念
  */
 public abstract class AbstractHumanFactory {

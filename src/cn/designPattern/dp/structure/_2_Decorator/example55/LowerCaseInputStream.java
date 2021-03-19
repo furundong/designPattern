@@ -13,13 +13,13 @@ public class LowerCaseInputStream extends FilterInputStream {
 
     public int read() throws IOException {
         int read = super.read();
-        return read == -1 ? read : Character.toLowerCase((char)read);
+        return read == -1 ? read : Character.toLowerCase((char) read);
     }
 
-    public int read(byte[] b, int offset , int len) throws IOException {
+    public int read(byte[] b, int offset, int len) throws IOException {
         int read = super.read(b, offset, len);
-        for (int i = offset; i < offset+read ; i++) {
-            b[i] = (byte) Character.toLowerCase((char)b[i]);
+        for (int i = offset; i < offset + read; i++) {
+            b[i] = (byte) Character.toLowerCase((char) b[i]);
         }
         return read;
     }

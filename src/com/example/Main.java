@@ -1,84 +1,92 @@
 package com.example;
 
-import sun.net.www.protocol.https.HttpsURLConnectionImpl;
+import com.example.algorithm.sort.bubbleSort.BubbleSort;
+import com.example.algorithm.sort.heapSort.HeapSort;
+import com.example.algorithm.sort.insertSort.InsertSort;
+import com.example.algorithm.sort.mergeSort.MergeSort;
+import com.example.dataStructure.heap.Heap;
+import com.example.dataStructure.heap.binaryHeap.BinaryHeap;
+import com.example.dataStructure.heap.binaryHeap.BinaryHeap2;
 
-import java.io.*;
-import java.net.URL;
-import java.net.URLConnection;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.*;
 
 public class Main {
 
-    public static void main2(String[] args) throws IOException {
-        //在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码。
-        FileOutputStream out = new FileOutputStream("D:1.txt");
-        out.write(228);
-        out.write(184);
-        out.write(173);
-        out.write(28);
-        out.close();
+    public static void main1(String[] args) {
+        // write your code here
+        Integer[] arrays = {12, 4, 1, 2, 41, 0, 55, 6, 2};
+        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
+        bubbleSort.sort(arrays);
+        System.out.println("bubbleSort = " + bubbleSort);
 
-        /*FileInputStream fileInputStream = new FileInputStream("D:1.txt");
-        int read = fileInputStream.read();
-        System.out.println("read = " + read);
+        Integer[] array = {12, 4, 1, 2, 41, 0, 55, 6, 2};
+        HeapSort<Integer> heapSort = new HeapSort<>();
+        heapSort.sort(array);
+        System.out.println("heapSort = " + heapSort);
 
-        read = fileInputStream.read();
-        System.out.println("read = " + read);
 
-        read = fileInputStream.read();
-        System.out.println("read = " + read);
+        Integer[] arr = {12, 4, 1, 2, 41, 0, 55, 6, 2};
+        InsertSort<Integer> integerInsertSort = new InsertSort<>();
+        integerInsertSort.sort(arr);
+        System.out.println("integerInsertSort = " + integerInsertSort);
 
-        read = fileInputStream.read();
-        System.out.println("read = " + read);
+        Integer[] arr2 = {12, 4, 1, 2, 41, 0, 55, 6, 2};
+        MergeSort<Integer> mergeSort = new MergeSort<>();
+        mergeSort.sort(arr2);
+        System.out.println("mergeSort = " + mergeSort);
 
-        read = fileInputStream.read();
-        System.out.println("read = " + read);*/
+        BinaryHeap<Integer> heap = new BinaryHeap<>();
+        heap.add(7);
+        heap.add(72);
+        heap.add(71);
+        heap.add(12);
+        heap.add(22);
+        heap.replace(8);
 
-        FileReader reader = new FileReader("D:1.txt");
-        System.out.println(reader.read());
+        System.out.println("heap = " + heap);
+        Heap<Integer> heap2 = new BinaryHeap2<>();
+        heap2.add(7);
+        heap2.add(72);
+        heap2.add(71);
+        heap2.add(12);
+        heap2.add(22);
+        System.out.println("heap = " + heap2);
+
+
     }
 
     public static void main(String[] args) throws Exception {
-        download("https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/180/180-bigskin-9.jpg",1);
+        String pathname = "C:\\Users\\Administrator\\AppData\\Local\\Temp\\baiduyunguanjia\\onlinedit\\cache";
+        File file = new File(pathname);
+        File[] files = file.listFiles();
+        for (File file1 : files) {
+            File file2 = file1.listFiles()[0];
+            FileInputStream fis = new FileInputStream(file2.getCanonicalPath());
+            String s = "E:\\studyOnline\\";
+            FileOutputStream fos = new FileOutputStream(s + file2.getName());
+            byte[] datas = new byte[1024 * 8];//创建搬运工具
+            int len = 0;//创建长度
+            while ((len = fis.read(datas)) != -1)//循环读取数据
+            {
+                fos.write(datas, 0, len);
+            }
+        }
     }
 
-    //java 通过url下载图片保存到本地
-    public static void download(String urlString, int i) throws Exception {
-        // 构造URL
-        URL url = new URL(urlString);
-        // 打开连接
-        URLConnection con = url.openConnection();
-        if(((HttpsURLConnectionImpl) con).getResponseCode() != 404){
-            // 输入流
-            //((HttpsURLConnectionImpl) con).getResponseMessage()
-            //((HttpsURLConnectionImpl) con).getResponseCode()
-            InputStream is = con.getInputStream();
-            // 1K的数据缓冲
-            byte[] bs = new byte[1024];
-            // 读取到的数据长度
-            int len;
-            // 输出的文件流
-            String filename = "D:\\" + i + ".jpg";  //下载路径及下载图片名称
-            File file = new File(filename);
-            FileOutputStream os = new FileOutputStream(file, true);
-            // 开始读取
-            while ((len = is.read(bs)) != -1) {
-                os.write(bs, 0, len);
-            }
-            System.out.println(i);
-            // 完毕，关闭所有链接
-            os.close();
-            is.close();
-        }else{
-            System.out.println("nothing");
-        }
+    public static void main2(String[] args) {
 
+        Map<String, Integer> map = new HashMap<>();
+        map.put("1", 8);
+        map.put("2", 12);
+        map.put("3", 53);
+        map.put("4", 33);
+        map.put("5", 11);
+        map.put("6", 3);
+        map.put("7", 3);
+        List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
+        list.sort(Comparator.comparingInt(Map.Entry::getValue));
     }
 }
-
-/*
-一个 Java 源代码文件称为一个编译单元（compilation unit）（有时也称翻译单元（translation unit））。
-每个编译单元的文件名后缀必须是 .java。在编译单元中可以有一个 public 类，它的类名必须与文件名相同（包括大小写，但不包括后缀名 .java）。
-每个编译单元中只能有一个 public 类，否则编译器不接受。如果这个编译单元中还有其他类，那么在包之外是无法访问到这些类的，
-    因为它们不是 public 类，此时它们为主 public 类提供“支持”类 。
- */
-

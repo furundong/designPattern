@@ -10,7 +10,7 @@ public class ConcreteClass extends TemplateTime {
     protected void code() {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 300000; i++) {
-            list.add(0,1);
+            list.add(0, 1);
         }
     }
 }

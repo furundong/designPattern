@@ -14,17 +14,17 @@ public class DinerMenu {
 
     public DinerMenu() {
 
-        addItem("first blt","blt a Hotdog ",true,1.99d);
-        addItem("second pancake","blt a soup on day",false,3.99d);
-        addItem("third pancake","blt A bacon-lettuce-and-tomato sandwich carryout.",true,5.88d);
+        addItem("first blt", "blt a Hotdog ", true, 1.99d);
+        addItem("second pancake", "blt a soup on day", false, 3.99d);
+        addItem("third pancake", "blt A bacon-lettuce-and-tomato sandwich carryout.", true, 5.88d);
     }
 
 
-    private void addItem(String name,String description,Boolean vegetarian,double price) {
+    private void addItem(String name, String description, Boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
-        if(numberOfItem>=MAX_ITEMS){
+        if (numberOfItem >= MAX_ITEMS) {
             System.out.println("menu is full,you can't add menuItem,sorry");
-        }else{
+        } else {
             menuList[numberOfItem++] = menuItem;
         }
     }

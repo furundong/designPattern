@@ -2,9 +2,9 @@ package cn.designPattern.dp.structure._2_Decorator.example1;
 
 /**
  * create by Freedom on 2021/2/4
- *
+ * <p>
  * 本例子摘抄Header first上面的例子. 由于写的好被我拿下来了.
- *
+ * <p>
  * 相对于设计模式之禅跟大话设计模式,  我还是觉得Header first确实是略微的通俗易懂一些.
  */
 public class Client {

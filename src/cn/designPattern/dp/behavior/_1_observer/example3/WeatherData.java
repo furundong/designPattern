@@ -6,6 +6,10 @@ import java.util.Observable;
 //这是具体的订阅者
 public class WeatherData extends Observable {
 
+    private String temperature;
+    private String humidity;
+    private String pressure;
+
     public String getTemperature() {
         return temperature;
     }
@@ -34,11 +38,4 @@ public class WeatherData extends Observable {
         setChanged();
         this.notifyObservers(getPressure());
     }
-
-    private String temperature;
-    private String humidity;
-    private String pressure;
-
-
-
 }

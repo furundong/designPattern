@@ -8,19 +8,20 @@ import java.lang.reflect.Constructor;
  */
 public class SingletonFactory {
     private static Singleton singleton;
-    static{
+
+    static {
         try {
             Class<?> aClass = Class.forName(Singleton.class.getName());//加载驱动，自动初始化。 简单工厂里面说过了。
             //得到无参构造  ， 反射就是这么无理
             Constructor<?> constructor = aClass.getDeclaredConstructor();
             constructor.setAccessible(true);
             singleton = (Singleton) constructor.newInstance();
-        }  catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static  Singleton getSingleton(){
+    public static Singleton getSingleton() {
         return singleton;
     }
 }

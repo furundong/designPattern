@@ -1,9 +1,9 @@
 package cn.designPattern.dp.creator._3_abstractFactory.example1;
 
 /**
- *  针对工厂方法的缺点，产品等级过多（食物，甜品，饮料），导致类的爆棚。
- *
- *  所以我们这个时候就应该使用抽象工厂
+ * 针对工厂方法的缺点，产品等级过多（食物，甜品，饮料），导致类的爆棚。
+ * <p>
+ * 所以我们这个时候就应该使用抽象工厂
  */
 public class Client {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Client {
     }
 }
 
-class ChihuoFactory implements Factory{
+class ChihuoFactory implements Factory {
 
     @Override
     public Drink getDrink() {

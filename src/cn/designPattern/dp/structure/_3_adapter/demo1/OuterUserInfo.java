@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * create by Freedom on 2021/2/7
- *
+ * <p>
  * 继承OuterUser是需要对接外包公司的系统, 而实现IUserInfo,是因为这里面需要有约束
  */
 public class OuterUserInfo extends OuterUser implements IUserInfo {
@@ -20,47 +20,52 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
      * 家庭地址
      */
     public String getHomeAddress() {
-        String homeAddress = (String)this.homeInfo.get("homeAddress");
+        String homeAddress = (String) this.homeInfo.get("homeAddress");
         System.out.println(homeAddress);
         return homeAddress;
     }
+
     /*
      * 家庭电话号码
      */
     public String getHomeTelNumber() {
-        String homeTelNumber = (String)this.homeInfo.get("homeTelNumber");
+        String homeTelNumber = (String) this.homeInfo.get("homeTelNumber");
         System.out.println(homeTelNumber);
         return homeTelNumber;
     }
+
     /*
      *职位信息
      */
     public String getJobPosition() {
-        String jobPosition = (String)this.officeInfo.get("jobPosition");
+        String jobPosition = (String) this.officeInfo.get("jobPosition");
         System.out.println(jobPosition);
         return jobPosition;
     }
+
     /*
      * 手机号码
      */
     public String getMobileNumber() {
-        String mobileNumber = (String)this.baseInfo.get("mobileNumber");
+        String mobileNumber = (String) this.baseInfo.get("mobileNumber");
         System.out.println(mobileNumber);
         return mobileNumber;
     }
+
     /*
      * 办公电话
      */
     public String getOfficeTelNumber() {
-        String officeTelNumber = (String)this.officeInfo.get("officeTelNumber");
+        String officeTelNumber = (String) this.officeInfo.get("officeTelNumber");
         System.out.println(officeTelNumber);
         return officeTelNumber;
     }
+
     /*
      * 员工的名称
      */
     public String getUserName() {
-        String userName = (String)this.baseInfo.get("userName");
+        String userName = (String) this.baseInfo.get("userName");
         System.out.println(userName);
         return userName;
     }

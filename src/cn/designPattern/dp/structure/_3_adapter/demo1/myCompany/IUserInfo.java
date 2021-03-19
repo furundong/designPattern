@@ -12,7 +12,8 @@ public interface IUserInfo {
 
     //手机号码，这个太重要，手机泛滥呀
     public String getMobileNumber();
-//办公电话，一般是座机
+
+    //办公电话，一般是座机
     public String getOfficeTelNumber();
 
     //这个人的职位是什么

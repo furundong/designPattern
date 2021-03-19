@@ -3,15 +3,17 @@ package cn.designPattern.dp.creator._4_singleton.example3;
 /*
 采用了双重检查，线程安全(推荐)
  */
-public class Singleton{
-    private Singleton(){}
+public class Singleton {
     private volatile static Singleton singleton;
 
-    public static Singleton getInstance(){
-        if(singleton == null){
-            synchronized (Singleton.class){
-                if(singleton == null){
-                    singleton  = new Singleton();
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new Singleton();
                 }
             }
         }

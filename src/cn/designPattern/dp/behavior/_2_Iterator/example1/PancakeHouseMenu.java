@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * create by Freedom on 2020/7/2
- *
+ * <p>
  * 其中一个店铺就是我们的煎饼果子铺，他就是我们的早餐店
  */
 public class PancakeHouseMenu {
@@ -15,13 +15,13 @@ public class PancakeHouseMenu {
     public PancakeHouseMenu() {
         menuList = new ArrayList<>();
 
-        addItem("first pancake","pancake with eggs",true,2.99d);
-        addItem("second pancake","pancake with blueberries",true,3.99d);
-        addItem("third pancake","pancake with sausage",true,4.99d);
+        addItem("first pancake", "pancake with eggs", true, 2.99d);
+        addItem("second pancake", "pancake with blueberries", true, 3.99d);
+        addItem("third pancake", "pancake with sausage", true, 4.99d);
     }
 
 
-    private void addItem(String name,String description,Boolean vegetarian,double price) {
+    private void addItem(String name, String description, Boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         menuList.add(menuItem);
     }

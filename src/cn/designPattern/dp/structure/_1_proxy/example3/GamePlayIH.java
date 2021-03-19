@@ -9,16 +9,16 @@ public class GamePlayIH implements InvocationHandler {
     Class cls = null;
     //被代理的实例
     Object obj = null;
+
     //我要代理谁
-    public GamePlayIH(Object _obj){
+    public GamePlayIH(Object _obj) {
         this.obj = _obj;
     }
 
     /**
-     *
-     * @param proxy 代理类。
-     * @param method  每个方法的对象,都拦截。
-     * @param args 参数
+     * @param proxy  代理类。
+     * @param method 每个方法的对象,都拦截。
+     * @param args   参数
      * @return
      * @throws Throwable
      */

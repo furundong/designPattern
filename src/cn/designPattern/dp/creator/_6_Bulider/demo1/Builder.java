@@ -1,7 +1,7 @@
 package cn.designPattern.dp.creator._6_Bulider.demo1;
 
 /**
- *规范产品的组建，一般是由子类实现。
+ * 规范产品的组建，一般是由子类实现。
  */
 public abstract class Builder {
     //设置产品的不同部分，以获得不同的产品

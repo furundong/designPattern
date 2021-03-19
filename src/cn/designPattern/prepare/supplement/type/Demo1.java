@@ -48,16 +48,17 @@ class StudentType<T> {
 class StudentStatic<T> {
     private T name;
 
-    public T getName() {
-        return name;
-    }
-
-    public void setName(T name) {
-        this.name = name;
-    }
-
     public StudentStatic(T name) {
         this.name = name;
+    }
+
+    //所以最终版本如下.
+    public static <K> StudentStatic<K> create(K name) {
+        return new StudentStatic<K>(name);
+    }
+
+    public T getName() {
+        return name;
     }
 
    /*  public static StudentStatic<T> create(T name) {
@@ -82,9 +83,8 @@ class StudentStatic<T> {
 //        return new StudentStatic<T>(name);
 //    }
 
-    //所以最终版本如下.
-    public static <K> StudentStatic<K> create(K name) {
-        return new StudentStatic<K>(name);
+    public void setName(T name) {
+        this.name = name;
     }
 
 }

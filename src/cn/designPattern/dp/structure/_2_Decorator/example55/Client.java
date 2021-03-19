@@ -16,9 +16,9 @@ public class Client {
                 )
         );
 
-        int i ;
-        while ((i = inputStream.read())>0){
-            System.out.print((char)i);
+        int i;
+        while ((i = inputStream.read()) > 0) {
+            System.out.print((char) i);
         }
     }
 }

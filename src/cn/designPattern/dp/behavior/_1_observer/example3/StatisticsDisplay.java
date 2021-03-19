@@ -7,7 +7,7 @@ public class StatisticsDisplay implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println(this+ " o = " + o + ", arg = " + arg);
+        System.out.println(this + " o = " + o + ", arg = " + arg);
     }
 
 }

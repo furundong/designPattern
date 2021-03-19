@@ -2,6 +2,10 @@ package cn.designPattern.dp.behavior._1_observer.example1;
 
 public class WeatherData {
 
+    private String temperature;
+    private String humidity;
+    private String pressure;
+
     public String getTemperature() {
         return temperature;
     }
@@ -26,13 +30,8 @@ public class WeatherData {
         this.pressure = pressure;
     }
 
-    private String temperature;
-    private String humidity;
-    private String pressure;
-
-
     //实例变量声明
-    public void measurementsChanged(){
+    public void measurementsChanged() {
         String temperature = getTemperature();
         String humidity = getHumidity();
         String pressure = getPressure();

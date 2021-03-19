@@ -1,11 +1,13 @@
 package cn.designPattern.dp.creator._4_singleton.example2;
 
-public class Singleton implements Cloneable{
+public class Singleton implements Cloneable {
     private static Singleton singleton;
-    private Singleton(){
+
+    private Singleton() {
     }
-    public static Singleton getSingleton(){
-        if (singleton == null){
+
+    public static Singleton getSingleton() {
+        if (singleton == null) {
             singleton = new Singleton();
         }
         return singleton;

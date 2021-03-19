@@ -1,18 +1,18 @@
 package cn.designPattern.dp.creator._4_singleton.example4;
 
-import sun.swing.plaf.synth.DefaultSynthStyle;
-
 /*
 ¾²Ì¬ÄÚ²¿Àà
  */
 public class Singleton {
-    private Singleton(){}
-    private static class Temp{
-      private static Singleton singleton = new Singleton();
+    private Singleton() {
     }
 
-    public static  Singleton getInstance(){
+    public static Singleton getInstance() {
         return Temp.singleton;
+    }
+
+    private static class Temp {
+        private static Singleton singleton = new Singleton();
     }
 }
 /*

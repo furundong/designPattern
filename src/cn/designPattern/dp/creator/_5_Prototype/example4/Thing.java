@@ -3,7 +3,7 @@ package cn.designPattern.dp.creator._5_Prototype.example4;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Thing implements Cloneable ,Serializable {
+public class Thing implements Cloneable, Serializable {
     //定义一个私有变量
     private final ArrayList<String> arrayList = new ArrayList<>();
 

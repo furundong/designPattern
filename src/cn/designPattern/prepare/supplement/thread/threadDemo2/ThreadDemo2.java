@@ -12,9 +12,9 @@ public class ThreadDemo2 {
         t.start();
 
         synchronized (a) {
-            for (int i = 1; i <= 26 ; i++) {
-                System.out.print(i+" ");
-                if(i==26){
+            for (int i = 1; i <= 26; i++) {
+                System.out.print(i + " ");
+                if (i == 26) {
                     a.notifyAll();
                     break;
                 }

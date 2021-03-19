@@ -30,14 +30,14 @@ public class Client {
 //然后再定义一个代练者
         IGamePlayer proxy = player.getProxy();
 //开始打游戏，记下时间戳
-        System.out.println("开始时间是："+new Date());
+        System.out.println("开始时间是：" + new Date());
         proxy.login("zhangSan", "password");
 //开始杀怪
         proxy.killBoss();
 //升级
         proxy.upgrade();
 //记录结束游戏时间
-        System.out.println("结束时间是："+new Date());
+        System.out.println("结束时间是：" + new Date());
     }
 
     /**
@@ -51,14 +51,14 @@ public class Client {
 //然后再定义一个代练者
         IGamePlayer proxy = new GamePlayerProxy(player);
 //开始打游戏，记下时间戳
-        System.out.println("开始时间是："+new Date());
+        System.out.println("开始时间是：" + new Date());
         proxy.login("zhangSan", "password");
 //开始杀怪
         proxy.killBoss();
 //升级
         proxy.upgrade();
 //记录结束游戏时间
-        System.out.println("结束时间是："+new Date());
+        System.out.println("结束时间是：" + new Date());
     }
 
 
@@ -66,14 +66,14 @@ public class Client {
 //定义一个游戏的角色
         IGamePlayer player = new GamePlayer("张三");
 //开始打游戏，记下时间戳
-        System.out.println("开始时间是："+new Date());
+        System.out.println("开始时间是：" + new Date());
         player.login("zhangSan", "password");
 //开始杀怪
         player.killBoss();
 //升级
         player.upgrade();
 //记录结束游戏时间
-        System.out.println("结束时间是："+new Date());
+        System.out.println("结束时间是：" + new Date());
     }
 }
 

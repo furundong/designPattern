@@ -18,14 +18,14 @@ public class Client {
     }
 }
 
-class Beef implements  Food{
+class Beef implements Food {
     @Override
     public void eat() {
         System.out.println("吃牛肉");
     }
 }
 
-class BeefFactory implements FoodFactory{
+class BeefFactory implements FoodFactory {
 
     @Override
     public Food getFood() {
@@ -64,21 +64,22 @@ class BeefFactory implements FoodFactory{
 
        当然我的代码还有很多问题，比如每次都是一个新的， 你可以用一个hashmap存起来。示例如下。
  */
- class ProductFactory {
-    private static final Map<String,Food> prMap = new HashMap();
-    public static synchronized Food createProduct(String type) throws Exception{
-        Food product =null;
+class ProductFactory {
+    private static final Map<String, Food> prMap = new HashMap();
+
+    public static synchronized Food createProduct(String type) throws Exception {
+        Food product = null;
 //如果Map中已经有这个对象
-        if(prMap.containsKey(type)){
+        if (prMap.containsKey(type)) {
             product = prMap.get(type);
-        }else{
-            if(type.equals("Product1")){
+        } else {
+            if (type.equals("Product1")) {
                 product = new Hamburger();
-            }else{
+            } else {
                 product = new Noodle();
             }
 //同时把对象放到缓存容器中
-            prMap.put(type,product);
+            prMap.put(type, product);
         }
         return product;
     }

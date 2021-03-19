@@ -39,7 +39,7 @@ public class Client {
 
         //第3个参数： InvocationHandler
 //        注意：每次对代理对象任何方法调用，都不会进入真正的方法中。而是进入第三个参数的invoke方法
-        IGamePlayer proxy = (IGamePlayer) Proxy.newProxyInstance(cl,new Class[]{IGamePlayer.class},handler);
+        IGamePlayer proxy = (IGamePlayer) Proxy.newProxyInstance(cl, new Class[]{IGamePlayer.class}, handler);
 
 //登录
         proxy.login("zhangSan", "password");

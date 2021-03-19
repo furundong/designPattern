@@ -25,7 +25,7 @@ class B implements Runnable {
                 }
                 System.out.println((char) i);
                 o.i = 0;
-                if((char)i=='z'){
+                if ((char) i == 'z') {
                     o.notifyAll();
                     break;
                 }

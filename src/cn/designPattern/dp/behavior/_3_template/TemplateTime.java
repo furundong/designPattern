@@ -12,11 +12,11 @@ public abstract class TemplateTime {
         long start = System.currentTimeMillis();
         code();
         long end = System.currentTimeMillis();
-        System.out.println("共花费: "+(end - start));
+        System.out.println("共花费: " + (end - start));
     }
 
     //基本方法
-    protected abstract void code() ;
+    protected abstract void code();
 }
 /*
 抽象模板中的基本方法尽量设计为protected类型，符合迪米特法则，不需要暴露

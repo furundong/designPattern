@@ -15,12 +15,15 @@ public class Pair<T> {
     public T getFirst() {
         return first;
     }
-    public T getLast() {
-        return last;
-    }
+
     public void setFirst(T first) {
         this.first = first;
     }
+
+    public T getLast() {
+        return last;
+    }
+
     public void setLast(T last) {
         this.last = last;
     }

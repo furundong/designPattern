@@ -2,6 +2,8 @@ package cn.designPattern.dp.behavior._2_Iterator.example2;
 
 import cn.designPattern.dp.behavior._2_Iterator.bean.MenuItem;
 
+import java.util.Iterator;
+
 /**
  * create by Freedom on 2020/7/2
  * 根据example1里面得问题， 那么我们自己封装一个迭代器对象。统一遍历解决

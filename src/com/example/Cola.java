@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 public class Cola implements Drink, Serializable {
     private String name;
+    private String company;
 
     public Cola() {
     }
@@ -38,8 +39,6 @@ public class Cola implements Drink, Serializable {
     public void setCompany(String company) {
         this.company = company;
     }
-
-    private String company;
 
     public void drink() {
         System.out.println("喝可乐");

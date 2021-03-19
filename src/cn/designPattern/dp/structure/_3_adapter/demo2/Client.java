@@ -5,7 +5,7 @@ import cn.designPattern.dp.structure._3_adapter.source.Wareform;
 /**
  * create by Freedom on 2021/2/7
  * 以下例子来着java8编程思想
- *
+ * <p>
  * 当方法操纵的是一个类而非接口时，它就只能作用于那个类或其子类。如果想把方法应用于那个继
  * 承层级结构之外的类，就会触霉头。接口在很大程度上放宽了这个限制，因而使用接口可以编写复用性
  * 更好的代码。
@@ -17,8 +17,8 @@ public class Client {
     public static void main(String[] args) {
         String s = "today is a good day ";
 
-        Applicator.apply(new Upcase(),s);
-        Applicator.apply(new Downcase(),s);
+        Applicator.apply(new Upcase(), s);
+        Applicator.apply(new Downcase(), s);
         //ok , 现在我们能处理, 但是我们发现了一串代码. 在source包里面, 现在我们发在这俩个代码非常的相似,
         Wareform wf = new Wareform();
 //        Applicator.apply( new LowPass(), wf); 如果这里想用, 那你就将发现的Filter去继承Processor,

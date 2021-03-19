@@ -39,7 +39,7 @@ class B extends A<Integer> {
 //        super(s);
 //    }
 
-    public  void test() {
+    public void test() {
         B f = new B(11);
     }
 }

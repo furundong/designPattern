@@ -1,6 +1,6 @@
 package cn.designPattern.dp.behavior._1_observer.example2;
 
-public class CurrentConditionsDisplay implements Observer,DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private String temperature;
     private String humidity;
     private Subject weatherData;
@@ -12,7 +12,7 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement {
 
     @Override
     public void display() {
-        System.out.println("temperature = " + temperature+" humidity = " + humidity);
+        System.out.println("temperature = " + temperature + " humidity = " + humidity);
     }
 
     @Override

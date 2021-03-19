@@ -10,7 +10,7 @@ package cn.designPattern.dp.behavior._4_strategy.demo2;
  * <p>
  * 问题是: 现在我们看鸭子的quack方法, 鸭子默认是呱呱叫, 橡皮鸭是吱吱,如果后面还有更多的叫法呢??? 几十种叫法, 默认实现只有一种, 代码还是在重复呀.
  * 虽然放到一个独立的接口,flyable,quackable可以解决一部分的问题,但是现在是从一个噩梦跳到了另一个噩梦.
- *
+ * <p>
  * ok,现在让我们来看看策略模式, 该登场了.
  */
 public class Client {

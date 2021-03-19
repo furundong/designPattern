@@ -14,6 +14,10 @@ public abstract class Beverage {
 
     public abstract String getDescription();
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public double cost() {
         double total = 0;
         if (milk) {
@@ -26,11 +30,6 @@ public abstract class Beverage {
             total += 0.3;
         }
         return total;
-    }
-
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public boolean isMilk() {

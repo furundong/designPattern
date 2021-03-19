@@ -8,7 +8,7 @@ public class Director {
     public Director() {
     }
 
-    public Computer build(ComputerBuilder computerBuilder){
+    public Computer build(ComputerBuilder computerBuilder) {
         computerBuilder.setCpu();
         computerBuilder.setGpu();
         computerBuilder.setMemory();

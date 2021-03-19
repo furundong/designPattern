@@ -25,7 +25,7 @@ class A implements Runnable {
                         }
                     }
                 }
-                if(i==53){
+                if (i == 53) {
                     break;
                 }
                 System.out.print(i + " ");

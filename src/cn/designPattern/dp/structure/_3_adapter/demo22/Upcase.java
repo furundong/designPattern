@@ -11,6 +11,6 @@ class Upcase implements Processor {
 
     @Override
     public String process(Object input) {
-        return ((String)input).toLowerCase();
+        return ((String) input).toLowerCase();
     }
 }

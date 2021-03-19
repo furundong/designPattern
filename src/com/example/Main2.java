@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class Main2 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Cola cola = new Cola("cola cola","colaCompany");
+        Cola cola = new Cola("cola cola", "colaCompany");
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(bos);
         oos.writeObject(cola);

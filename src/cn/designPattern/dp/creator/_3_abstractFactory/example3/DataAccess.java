@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 
 public class DataAccess {
 
-    public static UserDao createUser(){
+    public static UserDao createUser() {
 //        String absolutePath = new File(".").getAbsolutePath();  //c: 到你项目路径下
 //        InputStream resourceAsStream = DataAccess.class.getResourceAsStream("application.properties"); //不包括src的目录下
         try {
